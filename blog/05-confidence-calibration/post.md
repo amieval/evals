@@ -1,4 +1,4 @@
-> **Historical note.** This post explores an earlier design. The `confidence` field was later removed from the schema - see the current schema rules in the repo README / CLAUDE.md. The reasoning is preserved here as design history.
+> **Status — design sketch (2026-06).** An *illustrative* C0/C1/C2 scenario, never run. It explores the since-removed `confidence` field (replaced by structural support — artifact/evidence/dep counts), so the mechanism no longer exists as written. Preserved as design history; see the current schema in the repo README / CLAUDE.md.
 
 # How Certain Is Your Agent?
 

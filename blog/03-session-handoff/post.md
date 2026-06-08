@@ -1,3 +1,5 @@
+> **Status — design sketch (2026-06).** An *illustrative* C0/C1/C2 scenario, never run. Cross-session reasoning carryover is *not* a task in the current eval program ([`eval-design-depth-non-optional`](../../2026-06-01-eval-design-depth-non-optional.md) / [`boundary-blindness`](../../boundary-blindness/)), which narrowed to in-context boundary/inspectability failures. Predates the removal of the `confidence` field (now structural support).
+
 # The Amnesiac Agent
 
 **Why your agent forgets what it decided and why**

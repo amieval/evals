@@ -1,3 +1,5 @@
+> **Status — design sketch (2026-06).** An *illustrative* C0/C1/C2 scenario, never run as written — but its mechanism (acting on a buried supersession) **is** the one blog failure mode with a real run: [`boundary-blindness`](../../boundary-blindness/) Task 1 (buried supersession, N=10 — see its `REPORT.md`), also task 2 of [`eval-design-depth-non-optional`](../../2026-06-01-eval-design-depth-non-optional.md). Predates the removal of the `confidence` field (now structural support).
+
 # Your Agent's Beliefs Are Stale
 
 **And it doesn't know**

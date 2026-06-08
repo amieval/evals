@@ -1,3 +1,5 @@
+> **Status — design sketch (2026-06).** An *illustrative* C0/C1/C2 scenario, never run as written. Its failure mode (a non-adjacent conflict the agent should surface) was folded into the consolidated design [`eval-design-depth-non-optional`](../../2026-06-01-eval-design-depth-non-optional.md) (task 6) and the [`boundary-blindness`](../../boundary-blindness/) non-adjacent-joint-conflict task (built, not yet run). Predates the removal of the `confidence` field (now structural support) — read its scores as illustrative.
+
 # The Composition Problem
 
 **Why your agent misses things you told it**

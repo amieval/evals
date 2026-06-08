@@ -1,3 +1,5 @@
+> **Status — design sketch (2026-06).** An *illustrative* C0/C1/C2 scenario, never run as written. Its failure modes (speculation-as-fact, reflexive agreement) are tasks 1 & 4 of [`eval-design-depth-non-optional`](../../2026-06-01-eval-design-depth-non-optional.md) (not yet run). Predates the removal of the `confidence` field (now structural support).
+
 # The Self-Aware Agent
 
 **What happens when an agent holds beliefs about itself**
