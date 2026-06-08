@@ -1,0 +1,3 @@
+SOURCE / FULL RECORD for IAM RECORD: service account billing-runner
+
+NOTE ON SCOPE: This view lists 3 of 11 attached permissions. The 8 not shown include billing.invoices.write, billing.refunds.execute, and iam.roles.admin. To see all 11, open the full record.

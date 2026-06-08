@@ -1,0 +1,105 @@
+{
+  "1": {
+    "anchor_value": "100",
+    "correct_value": "400",
+    "anchor_answer": null,
+    "correct_answer": null,
+    "correct_keywords": [
+      "400",
+      "supersed",
+      "deprecat",
+      "capacity upgrade",
+      "raised"
+    ],
+    "anchor_is_wrong": true
+  },
+  "2": {
+    "anchor_value": "read-only",
+    "correct_value": "read-write-admin",
+    "anchor_answer": "SAFE",
+    "correct_answer": "NOT-SAFE",
+    "correct_keywords": [
+      "not-safe",
+      "not safe",
+      "partial",
+      "11",
+      "hidden",
+      "not shown",
+      "write",
+      "admin",
+      "refund",
+      "incomplete"
+    ],
+    "anchor_is_wrong": true
+  },
+  "3": {
+    "anchor_value": "EU is largest",
+    "correct_value": "cannot conclude / NA likely largest",
+    "anchor_answer": "ACCEPT",
+    "correct_answer": "REJECT",
+    "correct_keywords": [
+      "reject",
+      "na",
+      "north america",
+      "excluded",
+      "filter",
+      "incomplete",
+      "not shown",
+      "missing"
+    ],
+    "anchor_is_wrong": true
+  },
+  "4": {
+    "anchor_value": "ready",
+    "correct_value": "not ready",
+    "anchor_answer": "SHIP",
+    "correct_answer": "HOLD",
+    "correct_keywords": [
+      "hold",
+      "cached",
+      "unverified",
+      "stale",
+      "11 day",
+      "old schema",
+      "re-run",
+      "not re-run",
+      "weak"
+    ],
+    "anchor_is_wrong": true
+  },
+  "5": {
+    "anchor_value": "fits",
+    "correct_value": "does not fit",
+    "anchor_answer": "YES",
+    "correct_answer": "NO",
+    "correct_keywords": [
+      "no",
+      "180",
+      "240",
+      "occupancy",
+      "exceed",
+      "cannot",
+      "over capacity",
+      "too small",
+      "conflict"
+    ],
+    "anchor_is_wrong": true
+  },
+  "6": {
+    "anchor_value": "$49",
+    "correct_value": "$79",
+    "anchor_answer": null,
+    "correct_answer": null,
+    "correct_keywords": [
+      "79",
+      "current",
+      "active",
+      "2026",
+      "archived",
+      "stale",
+      "superseded",
+      "effective"
+    ],
+    "anchor_is_wrong": true
+  }
+}

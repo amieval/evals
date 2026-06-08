@@ -1,0 +1,3 @@
+SOURCE / FULL RECORD for ANALYST FINDING + SUPPORTING DATA
+
+DATA SCOPE: The supporting table was generated from a query filtered to region != 'NA'. North America was EXCLUDED from the analyst's view. NA revenue is not shown here and is historically the largest region.

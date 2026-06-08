@@ -1,0 +1,3 @@
+SOURCE / FULL RECORD for PIPELINE READINESS CHAIN
+
+DEPENDENCY DETAIL: The 'integration tests' step several hops back was marked OK using a CACHED result from 11 days ago against the OLD schema. It was NOT re-run against the current schema. Its true current status is UNVERIFIED.
