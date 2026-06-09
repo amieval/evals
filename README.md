@@ -1,68 +1,58 @@
-# Assertion-Based Knowledge Representation for LLMs
+# Composable Beliefs — Eval Suite
 
-This project explores whether structuring knowledge as **assertion dependency graphs** (DAGs of primitive and compound assertions) produces measurably better LLM adherence to design principles than equivalent knowledge presented as prose.
+Controlled evaluations testing whether structuring knowledge as a **belief /
+assertion DAG** (primitives + compounds with explicit dependencies) produces
+measurably better LLM behavior than the same information as prose or flat rules.
 
-## Core Concepts
+## Core concepts
 
-**Primitive assertion**: An atomic, irreducible claim. It cannot be decomposed further within the system. It is the smallest unit the system can reason about. Primitives are files.
+- **Primitive** — an atomic, source-grounded claim; the smallest unit reasoned about.
+- **Compound** — a composition of primitives (and other compounds) with an
+  explicit dependency graph; the composition is *declared*, not left for the
+  model to infer.
+- **Assertion DAG** — the reasoning structure, externalized. The bet under test:
+  an explicit, inspectable dependency structure changes model behavior in ways
+  flat prose does not.
 
-**Compound assertion**: A structured composition of primitives via logical connectives (AND, OR, NOT, IMPLIES) with an explicit dependency graph. Compounds are files with associated `deps.json` files listing their primitive dependencies.
+## The evals
 
-**Assertion DAG**: A directed acyclic graph where compound assertions depend on primitive assertions (and potentially other compounds). The graph is the reasoning structure, externalized as files and JSON.
+| Eval | Tests | Status |
+|---|---|---|
+| **`boundary-blindness/`** | Whether forcing a completeness/provenance signal at the point of use reduces agents acting confidently on incomplete views. Five conditions C0–C4, three models (Haiku/Sonnet/Opus), N=10. | **Run** — `REPORT.md` (Task 1, buried supersession); other task families built, not yet run. Has `PREREGISTRATION.md`, `scorer.py`, `runs/`, `STATUS.md`. |
+| **`purity-test/`** | Prose context vs assertion-DAG context on a bash test-generation task. N=3 per context. | **Run** — DAG 9/9 compound adherence vs prose 2/9 (see `results/`, `run.sh` / `score.sh`). |
+| **`conceptual-prototype/`** | Logical-validity proof of concept (apples / fruit / reproduction). | Prototype — `verdict.md`, `diagram.txt`. |
+| **`its-just-shell-reasoning-test/`** | Qualitative: does DAG-structured context yield more insightful reasoning than the prose equivalent? | Designed — `prose.md` vs `dag/`, manual comparison. |
+| **`knowledge-domains/`** | Template for decomposing a domain into a DAG (stable-marriage instantiated under `domains/`). | Template — no runs. |
 
-The key distinction from prose instructions: **the composition is explicit**. A compound assertion doesn't just list ideas — it declares which primitives combine and what design decision their combination produces. The LLM receives not just *what* to value but *how those values compose into actions*.
+## Design driver & content
 
-## Repository Structure
+- **`2026-06-01-eval-design-depth-non-optional.md`** — the current spec that
+  drives the suite: it isolates *non-optional depth* (C0–C4) and is the design
+  `boundary-blindness/` realizes.
+- **`blog/`** — eval-driven post drafts. They are design sketches, not results;
+  `blog/README.md` maps which map to real runs.
 
-```
-assertions/
-  README.md                    # this file
-  METHODOLOGY.md               # detailed eval methodology and findings
-  IMPLICATIONS.md              # theoretical implications and future directions
-  CONNECTION_TO_ITSJUSTSHELL.md # relationship to the Its Just Shell thesis
+## Analysis docs
 
-  test_1/                      # original conceptual prototype (apples/fruit)
-    primitives/                # 6 atomic claims about apples, fruit, colors
-    claims/                    # basic, complex, and recombined compound claims
-    diagram.txt                # ASCII dependency graph
-    verdict.md                 # analysis of the complex claim
+`METHODOLOGY.md` (full method + purity-test findings), `IMPLICATIONS.md`,
+`CONFLATION.md` (hallucination-as-conflation), `LIKELIHOOD_ANALYSIS.md`,
+`NEXT_EXPERIMENT.md`, `SESSION_SUMMARY.md`, `ASSERTION_DAGS_THESIS_SECTION.md`,
+`CONNECTION_TO_ITSJUSTSHELL.md`.
 
-  eval/                        # empirical eval: prose vs assertion DAG
-    task.md                    # the coding task given to the LLM
-    context_a/prompt.md        # prose context (article ideas as paragraphs)
-    context_b/prompt.md        # assertion DAG context (primitives + compounds + deps)
-    primitives/                # 6 primitive assertions about testing philosophy
-    compounds/                 # 3 compound assertions with deps.json files
-    run.sh                     # generates outputs: N runs x 2 contexts
-    score.sh                   # scores outputs against primitives and compounds
-    results/                   # raw outputs and summary scores
-```
-
-## Quick Start
+## Quick start (purity-test)
 
 ```bash
-cd eval/
-./run.sh 3       # generate 3 runs per context (6 total LLM calls)
-./score.sh       # score all outputs (54 total LLM calls for scoring)
+cd purity-test/
+./run.sh 3     # 3 runs per context (prose vs DAG)
+./score.sh     # score outputs against primitives + compounds
 cat results/summary.txt
 ```
 
-Requires `claude` CLI (Claude Code) installed and authenticated.
-
-## Key Finding
-
-In the initial eval (N=3, one task, one model), the assertion DAG produced:
-- **Perfect compound adherence**: 9/9 across all runs
-- **Near-perfect primitive adherence**: 17/18 across all runs
-- **Structurally different code**: the LLM invented new abstractions to satisfy the compound assertions
-
-The prose context produced:
-- **Near-zero compound adherence**: 2/9 across all runs
-- **Inconsistent primitive adherence**: 10/18 across all runs
-- **Uniform code**: same structural approach every time (temp files, no purity separation)
-
-See [METHODOLOGY.md](METHODOLOGY.md) for full details.
+Requires the `claude` CLI (Claude Code) installed and authenticated.
 
 ## Status
 
-Early-stage experimental. N=3 on one task with one model. The signal is strong but narrow. This is a proof of concept, not a validated result.
+Early-stage but with real runs: **purity-test** (N=3, one task, one model — strong
+but narrow signal) and **boundary-blindness** (N=10 on one task family, full
+`REPORT.md`). The remaining evals are designed or templated. Proof of concept,
+not a validated result.
