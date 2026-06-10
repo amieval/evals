@@ -1,0 +1,102 @@
+{
+  "manifest_version": 1,
+  "eval_id": "cb-ledger-smoke-v1",
+  "date": "2026-06-10",
+  "model": "mockllm/model",
+  "model_version": "mockllm/model@2026-06-10",
+  "harness": {
+    "name": "inspect",
+    "version": "0.3.239",
+    "task": "cb_ledger_smoke",
+    "config_digest": "sha256:360dbab3d7889adc"
+  },
+  "tags": [
+    "fixture"
+  ],
+  "runs": [
+    {
+      "run_id": "kRftY7NQVvrQ72ioBSwSn9",
+      "log": "document:logs/2026-06-10T13-18-49-00-00_cb-ledger-smoke_eMT54Lk87X8YyY8vfXPp8B.eval",
+      "cases": 5,
+      "scorers": [
+        {
+          "ruler": "includes",
+          "aggregate": {
+            "outcome_counts": {
+              "fail": 2,
+              "pass": 3
+            }
+          },
+          "load_bearing_cases": [
+            {
+              "case_id": "case3",
+              "outcome": "fail",
+              "detail": "answer: default output from mockllm/model; explanation: Default output from mockllm/model"
+            },
+            {
+              "case_id": "case5",
+              "outcome": "fail",
+              "detail": "answer: default output from mockllm/model; explanation: Default output from mockllm/model"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "dEkh7BQy5pMvfTL3mGuUt7",
+      "log": "document:logs/2026-06-10T13-18-56-00-00_cb-ledger-smoke_5sRRAoZstPnv3AGriFRPj8.eval",
+      "cases": 5,
+      "scorers": [
+        {
+          "ruler": "includes",
+          "aggregate": {
+            "outcome_counts": {
+              "fail": 2,
+              "pass": 3
+            }
+          },
+          "load_bearing_cases": [
+            {
+              "case_id": "case3",
+              "outcome": "fail",
+              "detail": "answer: default output from mockllm/model; explanation: Default output from mockllm/model"
+            },
+            {
+              "case_id": "case5",
+              "outcome": "fail",
+              "detail": "answer: default output from mockllm/model; explanation: Default output from mockllm/model"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "h42B9uCJrNiSDVNGwGCMwv",
+      "log": "document:logs/2026-06-10T13-18-58-00-00_cb-ledger-smoke_44NCub7bn4x9poeDPMJHfY.eval",
+      "cases": 5,
+      "scorers": [
+        {
+          "ruler": "includes",
+          "aggregate": {
+            "outcome_counts": {
+              "fail": 2,
+              "pass": 3
+            }
+          },
+          "load_bearing_cases": [
+            {
+              "case_id": "case3",
+              "outcome": "fail",
+              "detail": "answer: default output from mockllm/model; explanation: Default output from mockllm/model"
+            },
+            {
+              "case_id": "case5",
+              "outcome": "fail",
+              "detail": "answer: default output from mockllm/model; explanation: Default output from mockllm/model"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

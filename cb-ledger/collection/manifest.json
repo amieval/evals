@@ -1,0 +1,5 @@
+{
+  "namespace": "fxm",
+  "depends_on": ["method"],
+  "description": "Tier-2 round-trip artifact: a real Inspect run (mockllm provider, zero API cost) converted by inspect2manifest.py and imported by mix cb.import.eval. Every belief carries the fixture tag per method:a5 - this is test scaffolding with honest provenance, not a finding."
+}

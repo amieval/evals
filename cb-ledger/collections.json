@@ -1,0 +1,7 @@
+{
+  "description": "Local registry for verifying the cb-ledger round-trip collection against its method: dependency (mix cb.verify.collection fxm --registry <this file>).",
+  "collections": {
+    "fxm": "collection/beliefs.json",
+    "method": "../../belief-collections/method/beliefs.json"
+  }
+}

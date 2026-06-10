@@ -1,0 +1,428 @@
+[
+  {
+    "id": "fxm:o-c55405f7",
+    "type": "primitive",
+    "kind": "observation",
+    "domain": "eval",
+    "tags": [
+      "aggregate",
+      "outcome:fail",
+      "outcome:pass",
+      "fixture"
+    ],
+    "claim": "Run kRftY7NQVvrQ72ioBSwSn9 of cb-ledger-smoke-v1 against mockllm/model@2026-06-10, scored by includes: outcomes over 5 case(s) - fail: 2, pass: 3.",
+    "artifact": "eval:cb-ledger-smoke-v1/kRftY7NQVvrQ72ioBSwSn9/includes",
+    "evidence": [
+      {
+        "date": "2026-06-10",
+        "detail": "Imported from run-manifest by cb.import.eval. Harness: inspect, version: 0.3.239, task: cb_ledger_smoke, config digest: sha256:360dbab3d7889adc. Aggregate of ruler includes over 5 case(s) of kRftY7NQVvrQ72ioBSwSn9.",
+        "artifact": "document:logs/2026-06-10T13-18-49-00-00_cb-ledger-smoke_eMT54Lk87X8YyY8vfXPp8B.eval"
+      }
+    ],
+    "subjects": [
+      {
+        "ref": "eval/cb-ledger-smoke-v1",
+        "type": "eval"
+      },
+      {
+        "ref": "run/kRftY7NQVvrQ72ioBSwSn9",
+        "type": "run"
+      },
+      {
+        "ref": "model/mockllm/model",
+        "type": "model"
+      },
+      {
+        "ref": "model-version/mockllm/model@2026-06-10",
+        "type": "model_version"
+      },
+      {
+        "ref": "ruler/includes",
+        "type": "ruler"
+      }
+    ],
+    "deps": [],
+    "status": "active",
+    "created": "2026-06-10"
+  },
+  {
+    "id": "fxm:o-5c825699",
+    "type": "primitive",
+    "kind": "observation",
+    "domain": "eval",
+    "tags": [
+      "outcome:fail",
+      "fixture"
+    ],
+    "claim": "Case case3 of run kRftY7NQVvrQ72ioBSwSn9 in cb-ledger-smoke-v1 against mockllm/model@2026-06-10, scored by includes: outcome fail. answer: default output from mockllm/model; explanation: Default output from mockllm/model",
+    "artifact": "eval:cb-ledger-smoke-v1/kRftY7NQVvrQ72ioBSwSn9/case3/includes",
+    "evidence": [
+      {
+        "date": "2026-06-10",
+        "detail": "Imported from run-manifest by cb.import.eval. Harness: inspect, version: 0.3.239, task: cb_ledger_smoke, config digest: sha256:360dbab3d7889adc. Load-bearing case case3 scored by ruler includes on kRftY7NQVvrQ72ioBSwSn9.",
+        "artifact": "document:logs/2026-06-10T13-18-49-00-00_cb-ledger-smoke_eMT54Lk87X8YyY8vfXPp8B.eval"
+      }
+    ],
+    "subjects": [
+      {
+        "ref": "eval/cb-ledger-smoke-v1",
+        "type": "eval"
+      },
+      {
+        "ref": "run/kRftY7NQVvrQ72ioBSwSn9",
+        "type": "run"
+      },
+      {
+        "ref": "case/case3",
+        "type": "case"
+      },
+      {
+        "ref": "model/mockllm/model",
+        "type": "model"
+      },
+      {
+        "ref": "model-version/mockllm/model@2026-06-10",
+        "type": "model_version"
+      },
+      {
+        "ref": "ruler/includes",
+        "type": "ruler"
+      }
+    ],
+    "deps": [],
+    "status": "active",
+    "created": "2026-06-10"
+  },
+  {
+    "id": "fxm:o-637a3617",
+    "type": "primitive",
+    "kind": "observation",
+    "domain": "eval",
+    "tags": [
+      "outcome:fail",
+      "fixture"
+    ],
+    "claim": "Case case5 of run kRftY7NQVvrQ72ioBSwSn9 in cb-ledger-smoke-v1 against mockllm/model@2026-06-10, scored by includes: outcome fail. answer: default output from mockllm/model; explanation: Default output from mockllm/model",
+    "artifact": "eval:cb-ledger-smoke-v1/kRftY7NQVvrQ72ioBSwSn9/case5/includes",
+    "evidence": [
+      {
+        "date": "2026-06-10",
+        "detail": "Imported from run-manifest by cb.import.eval. Harness: inspect, version: 0.3.239, task: cb_ledger_smoke, config digest: sha256:360dbab3d7889adc. Load-bearing case case5 scored by ruler includes on kRftY7NQVvrQ72ioBSwSn9.",
+        "artifact": "document:logs/2026-06-10T13-18-49-00-00_cb-ledger-smoke_eMT54Lk87X8YyY8vfXPp8B.eval"
+      }
+    ],
+    "subjects": [
+      {
+        "ref": "eval/cb-ledger-smoke-v1",
+        "type": "eval"
+      },
+      {
+        "ref": "run/kRftY7NQVvrQ72ioBSwSn9",
+        "type": "run"
+      },
+      {
+        "ref": "case/case5",
+        "type": "case"
+      },
+      {
+        "ref": "model/mockllm/model",
+        "type": "model"
+      },
+      {
+        "ref": "model-version/mockllm/model@2026-06-10",
+        "type": "model_version"
+      },
+      {
+        "ref": "ruler/includes",
+        "type": "ruler"
+      }
+    ],
+    "deps": [],
+    "status": "active",
+    "created": "2026-06-10"
+  },
+  {
+    "id": "fxm:o-21faafb7",
+    "type": "primitive",
+    "kind": "observation",
+    "domain": "eval",
+    "tags": [
+      "aggregate",
+      "outcome:fail",
+      "outcome:pass",
+      "fixture"
+    ],
+    "claim": "Run dEkh7BQy5pMvfTL3mGuUt7 of cb-ledger-smoke-v1 against mockllm/model@2026-06-10, scored by includes: outcomes over 5 case(s) - fail: 2, pass: 3.",
+    "artifact": "eval:cb-ledger-smoke-v1/dEkh7BQy5pMvfTL3mGuUt7/includes",
+    "evidence": [
+      {
+        "date": "2026-06-10",
+        "detail": "Imported from run-manifest by cb.import.eval. Harness: inspect, version: 0.3.239, task: cb_ledger_smoke, config digest: sha256:360dbab3d7889adc. Aggregate of ruler includes over 5 case(s) of dEkh7BQy5pMvfTL3mGuUt7.",
+        "artifact": "document:logs/2026-06-10T13-18-56-00-00_cb-ledger-smoke_5sRRAoZstPnv3AGriFRPj8.eval"
+      }
+    ],
+    "subjects": [
+      {
+        "ref": "eval/cb-ledger-smoke-v1",
+        "type": "eval"
+      },
+      {
+        "ref": "run/dEkh7BQy5pMvfTL3mGuUt7",
+        "type": "run"
+      },
+      {
+        "ref": "model/mockllm/model",
+        "type": "model"
+      },
+      {
+        "ref": "model-version/mockllm/model@2026-06-10",
+        "type": "model_version"
+      },
+      {
+        "ref": "ruler/includes",
+        "type": "ruler"
+      }
+    ],
+    "deps": [],
+    "status": "active",
+    "created": "2026-06-10"
+  },
+  {
+    "id": "fxm:o-f7866de7",
+    "type": "primitive",
+    "kind": "observation",
+    "domain": "eval",
+    "tags": [
+      "outcome:fail",
+      "fixture"
+    ],
+    "claim": "Case case3 of run dEkh7BQy5pMvfTL3mGuUt7 in cb-ledger-smoke-v1 against mockllm/model@2026-06-10, scored by includes: outcome fail. answer: default output from mockllm/model; explanation: Default output from mockllm/model",
+    "artifact": "eval:cb-ledger-smoke-v1/dEkh7BQy5pMvfTL3mGuUt7/case3/includes",
+    "evidence": [
+      {
+        "date": "2026-06-10",
+        "detail": "Imported from run-manifest by cb.import.eval. Harness: inspect, version: 0.3.239, task: cb_ledger_smoke, config digest: sha256:360dbab3d7889adc. Load-bearing case case3 scored by ruler includes on dEkh7BQy5pMvfTL3mGuUt7.",
+        "artifact": "document:logs/2026-06-10T13-18-56-00-00_cb-ledger-smoke_5sRRAoZstPnv3AGriFRPj8.eval"
+      }
+    ],
+    "subjects": [
+      {
+        "ref": "eval/cb-ledger-smoke-v1",
+        "type": "eval"
+      },
+      {
+        "ref": "run/dEkh7BQy5pMvfTL3mGuUt7",
+        "type": "run"
+      },
+      {
+        "ref": "case/case3",
+        "type": "case"
+      },
+      {
+        "ref": "model/mockllm/model",
+        "type": "model"
+      },
+      {
+        "ref": "model-version/mockllm/model@2026-06-10",
+        "type": "model_version"
+      },
+      {
+        "ref": "ruler/includes",
+        "type": "ruler"
+      }
+    ],
+    "deps": [],
+    "status": "active",
+    "created": "2026-06-10"
+  },
+  {
+    "id": "fxm:o-68c3210b",
+    "type": "primitive",
+    "kind": "observation",
+    "domain": "eval",
+    "tags": [
+      "outcome:fail",
+      "fixture"
+    ],
+    "claim": "Case case5 of run dEkh7BQy5pMvfTL3mGuUt7 in cb-ledger-smoke-v1 against mockllm/model@2026-06-10, scored by includes: outcome fail. answer: default output from mockllm/model; explanation: Default output from mockllm/model",
+    "artifact": "eval:cb-ledger-smoke-v1/dEkh7BQy5pMvfTL3mGuUt7/case5/includes",
+    "evidence": [
+      {
+        "date": "2026-06-10",
+        "detail": "Imported from run-manifest by cb.import.eval. Harness: inspect, version: 0.3.239, task: cb_ledger_smoke, config digest: sha256:360dbab3d7889adc. Load-bearing case case5 scored by ruler includes on dEkh7BQy5pMvfTL3mGuUt7.",
+        "artifact": "document:logs/2026-06-10T13-18-56-00-00_cb-ledger-smoke_5sRRAoZstPnv3AGriFRPj8.eval"
+      }
+    ],
+    "subjects": [
+      {
+        "ref": "eval/cb-ledger-smoke-v1",
+        "type": "eval"
+      },
+      {
+        "ref": "run/dEkh7BQy5pMvfTL3mGuUt7",
+        "type": "run"
+      },
+      {
+        "ref": "case/case5",
+        "type": "case"
+      },
+      {
+        "ref": "model/mockllm/model",
+        "type": "model"
+      },
+      {
+        "ref": "model-version/mockllm/model@2026-06-10",
+        "type": "model_version"
+      },
+      {
+        "ref": "ruler/includes",
+        "type": "ruler"
+      }
+    ],
+    "deps": [],
+    "status": "active",
+    "created": "2026-06-10"
+  },
+  {
+    "id": "fxm:o-034c1b59",
+    "type": "primitive",
+    "kind": "observation",
+    "domain": "eval",
+    "tags": [
+      "aggregate",
+      "outcome:fail",
+      "outcome:pass",
+      "fixture"
+    ],
+    "claim": "Run h42B9uCJrNiSDVNGwGCMwv of cb-ledger-smoke-v1 against mockllm/model@2026-06-10, scored by includes: outcomes over 5 case(s) - fail: 2, pass: 3.",
+    "artifact": "eval:cb-ledger-smoke-v1/h42B9uCJrNiSDVNGwGCMwv/includes",
+    "evidence": [
+      {
+        "date": "2026-06-10",
+        "detail": "Imported from run-manifest by cb.import.eval. Harness: inspect, version: 0.3.239, task: cb_ledger_smoke, config digest: sha256:360dbab3d7889adc. Aggregate of ruler includes over 5 case(s) of h42B9uCJrNiSDVNGwGCMwv.",
+        "artifact": "document:logs/2026-06-10T13-18-58-00-00_cb-ledger-smoke_44NCub7bn4x9poeDPMJHfY.eval"
+      }
+    ],
+    "subjects": [
+      {
+        "ref": "eval/cb-ledger-smoke-v1",
+        "type": "eval"
+      },
+      {
+        "ref": "run/h42B9uCJrNiSDVNGwGCMwv",
+        "type": "run"
+      },
+      {
+        "ref": "model/mockllm/model",
+        "type": "model"
+      },
+      {
+        "ref": "model-version/mockllm/model@2026-06-10",
+        "type": "model_version"
+      },
+      {
+        "ref": "ruler/includes",
+        "type": "ruler"
+      }
+    ],
+    "deps": [],
+    "status": "active",
+    "created": "2026-06-10"
+  },
+  {
+    "id": "fxm:o-82e1cad8",
+    "type": "primitive",
+    "kind": "observation",
+    "domain": "eval",
+    "tags": [
+      "outcome:fail",
+      "fixture"
+    ],
+    "claim": "Case case3 of run h42B9uCJrNiSDVNGwGCMwv in cb-ledger-smoke-v1 against mockllm/model@2026-06-10, scored by includes: outcome fail. answer: default output from mockllm/model; explanation: Default output from mockllm/model",
+    "artifact": "eval:cb-ledger-smoke-v1/h42B9uCJrNiSDVNGwGCMwv/case3/includes",
+    "evidence": [
+      {
+        "date": "2026-06-10",
+        "detail": "Imported from run-manifest by cb.import.eval. Harness: inspect, version: 0.3.239, task: cb_ledger_smoke, config digest: sha256:360dbab3d7889adc. Load-bearing case case3 scored by ruler includes on h42B9uCJrNiSDVNGwGCMwv.",
+        "artifact": "document:logs/2026-06-10T13-18-58-00-00_cb-ledger-smoke_44NCub7bn4x9poeDPMJHfY.eval"
+      }
+    ],
+    "subjects": [
+      {
+        "ref": "eval/cb-ledger-smoke-v1",
+        "type": "eval"
+      },
+      {
+        "ref": "run/h42B9uCJrNiSDVNGwGCMwv",
+        "type": "run"
+      },
+      {
+        "ref": "case/case3",
+        "type": "case"
+      },
+      {
+        "ref": "model/mockllm/model",
+        "type": "model"
+      },
+      {
+        "ref": "model-version/mockllm/model@2026-06-10",
+        "type": "model_version"
+      },
+      {
+        "ref": "ruler/includes",
+        "type": "ruler"
+      }
+    ],
+    "deps": [],
+    "status": "active",
+    "created": "2026-06-10"
+  },
+  {
+    "id": "fxm:o-83bc53b1",
+    "type": "primitive",
+    "kind": "observation",
+    "domain": "eval",
+    "tags": [
+      "outcome:fail",
+      "fixture"
+    ],
+    "claim": "Case case5 of run h42B9uCJrNiSDVNGwGCMwv in cb-ledger-smoke-v1 against mockllm/model@2026-06-10, scored by includes: outcome fail. answer: default output from mockllm/model; explanation: Default output from mockllm/model",
+    "artifact": "eval:cb-ledger-smoke-v1/h42B9uCJrNiSDVNGwGCMwv/case5/includes",
+    "evidence": [
+      {
+        "date": "2026-06-10",
+        "detail": "Imported from run-manifest by cb.import.eval. Harness: inspect, version: 0.3.239, task: cb_ledger_smoke, config digest: sha256:360dbab3d7889adc. Load-bearing case case5 scored by ruler includes on h42B9uCJrNiSDVNGwGCMwv.",
+        "artifact": "document:logs/2026-06-10T13-18-58-00-00_cb-ledger-smoke_44NCub7bn4x9poeDPMJHfY.eval"
+      }
+    ],
+    "subjects": [
+      {
+        "ref": "eval/cb-ledger-smoke-v1",
+        "type": "eval"
+      },
+      {
+        "ref": "run/h42B9uCJrNiSDVNGwGCMwv",
+        "type": "run"
+      },
+      {
+        "ref": "case/case5",
+        "type": "case"
+      },
+      {
+        "ref": "model/mockllm/model",
+        "type": "model"
+      },
+      {
+        "ref": "model-version/mockllm/model@2026-06-10",
+        "type": "model_version"
+      },
+      {
+        "ref": "ruler/includes",
+        "type": "ruler"
+      }
+    ],
+    "deps": [],
+    "status": "active",
+    "created": "2026-06-10"
+  }
+]
