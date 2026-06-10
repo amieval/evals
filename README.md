@@ -31,8 +31,18 @@ a run record (task snapshot, logs, results, report). Shared execution infra - th
 Inspect adapter (`inspect2manifest.py`), LLM-judge scorers, study scaffolds in
 development (dag-vs-prose-v2), and the toolchain - lives in the sibling **`bench`**
 repo; the belief-graph framework it feeds is `composable-beliefs`, and the graphs
-themselves are `belief-collections`. When a bench study runs for real, its record
-lands here as a snapshot. (`cb-ledger/` briefly lived here before moving to bench.)
+themselves are `belief-collections`. (`cb-ledger/` briefly lived here before moving
+to bench.)
+
+When a bench study runs for real, its record lands here as a **snapshot**: a copy
+of the exact task files and conditions that ran (not a pointer at the bench's
+moving head), the raw `.eval` logs, the run-manifest the adapter emitted, the
+judge-validation sheet, and the report. Two anchors make the record durable: the
+manifest's `config_digest` pins which bench state produced it, and the belief
+collection imported from the manifest (in `belief-collections`) cites these logs
+as `document:` artifacts - so a published verdict's audit tree points back into
+this archive. That is also why this repo stays append-only: rewriting a run record
+here would silently invalidate evidence pointers in the ledger.
 
 ## Design driver & content
 
