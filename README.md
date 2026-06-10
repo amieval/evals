@@ -24,6 +24,16 @@ measurably better LLM behavior than the same information as prose or flat rules.
 | **`its-just-shell-reasoning-test/`** | Qualitative: does DAG-structured context yield more insightful reasoning than the prose equivalent? | Designed — `prose.md` vs `dag/`, manual comparison. |
 | **`knowledge-domains/`** | Template for decomposing a domain into a DAG (stable-marriage instantiated under `domains/`). | Template — no runs. |
 
+## Where the infra lives
+
+This repo is the **append-only archive of executed evals**: each directory above is
+a run record (task snapshot, logs, results, report). Shared execution infra - the
+Inspect adapter (`inspect2manifest.py`), LLM-judge scorers, study scaffolds in
+development (dag-vs-prose-v2), and the toolchain - lives in the sibling **`bench`**
+repo; the belief-graph framework it feeds is `composable-beliefs`, and the graphs
+themselves are `belief-collections`. When a bench study runs for real, its record
+lands here as a snapshot. (`cb-ledger/` briefly lived here before moving to bench.)
+
 ## Design driver & content
 
 - **`2026-06-01-eval-design-depth-non-optional.md`** — the current spec that
